@@ -1,7 +1,7 @@
 
 from django.shortcuts import render
 from django.utils import timezone
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
 
 
@@ -12,3 +12,4 @@ def post_list(request):
 class ArticleDetailView(DetailView):
     model = Post
     template_name = 'article_details.html'
+
